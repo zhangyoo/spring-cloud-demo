@@ -1,0 +1,9 @@
+env: dev
+
+logging:
+  config:
+    classpath: logback-spring.xml
+
+server:
+  port: 8082
+  context-path: /cloud-consumer
