@@ -6,7 +6,8 @@ logging:
 
 server:
   port: 8081
-  context-path: /cloud-provider
+  servlet:
+    context-path: /cloud-provider
 spring:
     datasource:
         name: test

@@ -6,4 +6,5 @@ logging:
 
 server:
   port: 8082
-  context-path: /cloud-consumer
+  servlet:
+    context-path: /cloud-consumer
