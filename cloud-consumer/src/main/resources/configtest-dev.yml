@@ -1,7 +1,0 @@
-cloud:
-  config:
-    version: 2.1
-
-spring:
-  config:
-    version: 3.1
