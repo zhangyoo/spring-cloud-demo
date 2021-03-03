@@ -8,3 +8,14 @@ server:
   port: 8082
   servlet:
     context-path: /cloud-consumer
+
+spring:
+  application:
+    name: CLOUD-CONSUMER
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/cloud-server/eureka
+  instance:
+    prefer-ip-address: true
