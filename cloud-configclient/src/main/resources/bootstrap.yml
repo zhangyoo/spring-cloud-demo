@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+#      label: master
+      name: config
+      profile: dev
+#      profile: prod
+      uri: http://localhost:8086/
+#      discovery:
+#        enabled: true
+#        service-id: CLOUD-CONFIG
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/cloud-server/eureka
+  instance:
+    prefer-ip-address: true

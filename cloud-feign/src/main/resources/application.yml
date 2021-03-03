@@ -1,0 +1,23 @@
+env: dev
+
+logging:
+  config:
+    classpath: logback-spring.xml
+
+server:
+  port: 8085
+  servlet:
+    context-path: /cloud-feign
+
+spring:
+  application:
+    name: CLOUD-FEIGN
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/cloud-server/eureka
+
+feign:
+  hystrix:
+    enabled: true

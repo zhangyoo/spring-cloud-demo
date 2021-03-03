@@ -1,0 +1,25 @@
+env: dev
+
+logging:
+  config:
+    classpath: logback-spring.xml
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: CLOUD-ZUUL
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/cloud-server/eureka
+
+zuul:
+  prefix: /server
+  ignored-services: "*"
+  routes:
+    provider:
+      path: /test-provider1/**
+      serviceId: CLOUD-PROVIDER

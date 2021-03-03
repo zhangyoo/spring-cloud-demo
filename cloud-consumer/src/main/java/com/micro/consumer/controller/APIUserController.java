@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/apiUser")
 public class APIUserController {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8081/cloud-provider";
+    private static final String REST_URL_PREFIX = "http://CLOUD-PROVIDER/cloud-provider";
 
     @Autowired
     private RestTemplate restTemplate;
